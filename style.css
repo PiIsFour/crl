@@ -3,17 +3,30 @@
 body { 
     margin: 0;
     font-family: sans-serif;
-} 
 
-.container {
-    width: 80%;
-    max-width: 750px;
-    margin: 0 auto;
-    background: #23424A;
-    color: white;
-    padding: 50px 0; 
+    display: grid;
+    grid-template-columns: minmax(10%, auto) minmax(min-content, 750px) minmax(10%, auto);
+    position: relative;
+}
+
+body > * {
+    grid-column: 2 / -2;
 }
 
 .intro-content {
     width: 50%;
+    color: white;
+    padding: 50px 0; 
+}
+
+.intro-content::before {
+    content: '';
+    position: absolute;
+    background: #23424A;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    grid-row: 1 / span 1;
+    z-index: -1;
 }
