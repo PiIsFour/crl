@@ -3,15 +3,28 @@
 body { 
     margin: 0;
     font-family: sans-serif;
-} 
+
+    display: grid;
+    grid-template-columns: minmax(10%, auto) minmax(min-content, 750px) minmax(10%, auto);
+}
+
+body > * {
+    grid-column: 2 / -2;
+}
 
 .container {
-    width: 80%;
-    max-width: 750px;
-    margin: 0 auto;
     background: #23424A;
     color: white;
-    padding: 50px 0; 
+    padding: 50px 0;
+    
+    grid-column: 1 / -1;
+
+    display: grid;
+    grid-template-columns: subgrid;
+}
+
+.container > * {
+    grid-column: 2 / -2;
 }
 
 .intro-content {
