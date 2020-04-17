@@ -1,8 +1,12 @@
 [submodule "day01"]
-	branch = day01
 	path = day01
 	url = https://github.com/PiIsFour/crl.git
+	branch = day01
 [submodule "day03"]
 	path = day03
 	url = https://github.com/PiIsFour/crl.git
 	branch = day03
+[submodule "day05"]
+	path = day05
+	url = https://github.com/PiIsFour/crl.git
+	branch = day05
