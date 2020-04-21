@@ -10,6 +10,10 @@
 	--color-btn-text: #072A2D;
 }
 
+img {
+	max-width: 100%;
+}
+
 body {
 	margin: 0;
 }
@@ -20,13 +24,18 @@ body {
 	margin: 0 auto;
 }
 
-header {
-	background-color: var(--color-bg);
+.row {
+	display: flex;
+	justify-content: space-between;
 }
 
-.intro {
-	max-width: 700px;
+header {
+	background-color: var(--color-bg);
 	padding: 8rem 0;
+}
+
+.header__text {
+	width: 60%;
 
 	font-family: 'Roboto', sans-serif;
 	font-style: normal;
@@ -35,7 +44,7 @@ header {
 	line-height: 2rem;
 }
 
-.intro h1 {
+.header__text h1 {
 	font-weight: 900;
 	font-size: 3rem;
 	line-height: 3.5rem;
@@ -43,11 +52,11 @@ header {
 	color: var(--color-heading);
 }
 
-.intro p {
+.header__text p {
 	color: var(--color-text);
 }
 
-.intro a {
+.header__text a {
 	font-weight: bold;
 	line-height: 2rem;
 	
@@ -63,4 +72,8 @@ header {
 	padding: 1rem 3rem;
 	border-radius: 100vmax;
 	text-align: center;
+}
+
+.header__img {
+	width: 30%;
 }
