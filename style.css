@@ -3,15 +3,25 @@
 }
 
 :root {
-	--color-bg: #23424A;
+	--color-bg-header: #23424A;
+	--color-bg-section-dark: #136C72;
+	--color-bg-btn: #38CFD9;
+
 	--color-heading: #FFFFFF;
+	--color-col-heading: #87629A;
 	--color-text: rgba(255, 255, 255, 0.85);
-	--color-btn: #38CFD9;
 	--color-btn-text: #072A2D;
+	--color-section-dark-text: #FFFFFF;
 }
 
 body {
 	margin: 0;
+
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1.3rem;
+	line-height: 2rem;
 }
 
 .container {
@@ -21,18 +31,12 @@ body {
 }
 
 header {
-	background-color: var(--color-bg);
+	background-color: var(--color-bg-header);
 }
 
 .intro {
 	max-width: 700px;
 	padding: 8rem 0;
-
-	font-family: 'Roboto', sans-serif;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 1.3rem;
-	line-height: 2rem;
 }
 
 .intro h1 {
@@ -47,7 +51,7 @@ header {
 	color: var(--color-text);
 }
 
-.intro a {
+.btn {
 	font-weight: bold;
 	line-height: 2rem;
 	
@@ -56,11 +60,45 @@ header {
 	text-decoration: none;
 	
 	color: var(--color-btn-text);
-	background: var(--color-btn);
+	background: var(--color-bg-btn);
 
 	display: inline-block;
 	margin-top: 3rem;
 	padding: 1rem 3rem;
 	border-radius: 100vmax;
 	text-align: center;
+}
+
+section {
+	padding: 5rem 0;
+}
+
+.section-dark {
+	background-color: var(--color-bg-section-dark);
+}
+
+.row {
+	display: flex;
+}
+
+.col {
+	text-align: center;
+}
+
+/* gap */
+.col + .col {
+	margin-left: 2rem;
+}
+
+.col h2 {
+	font-size: 2.25rem;
+	font-weight: 900;
+}
+
+.section-light .col h2 {
+	color: var(--color-col-heading);
+}
+
+.section-dark .col {
+	color: var(--color-section-dark-text)
 }
