@@ -43,22 +43,28 @@ body {
 }
 
 nav {
-	background-color: red;
+	background-color: #136c72;
 }
 
 nav ul {
 	margin: 0;
-	padding: 0;
+	padding: 1rem 0;
 	list-style: none;
+
+	display: flex;
+	gap: 1rem;
+	align-items: center;
 }
 
 nav a {
 	color: #fff;
 	text-decoration: none;
-	text-transform: uppercase;;
+	text-transform: uppercase;
+	padding: 1rem;
 }
 
-.nav__link--button {
+nav a.nav-btn {
+	display: inline-block;
 	background: #fff;
 	color: #136c72;
 	padding: .25em 1em;
