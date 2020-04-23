@@ -42,6 +42,33 @@ body {
 	justify-content: space-between;
 }
 
+nav {
+	background-color: red;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;;
+}
+
+.nav__link--button {
+	background: #fff;
+	color: #136c72;
+	padding: .25em 1em;
+	border-radius: 10em;
+}
+
+nav a:hover {
+	opacity: .75;
+}
+
 header {
 	background-color: var(--color-bg-header);
 	padding: 8rem 0;
