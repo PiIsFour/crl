@@ -21,6 +21,7 @@ body {
 
 img {
 	align-self: flex-start;
+	max-width: max-content;
 }
 
 .flex-grow {
@@ -81,6 +82,7 @@ img {
 	font-family: 'Playfair Display', serif;
 	font-size: 2.25rem;
 	line-height: 1;
+	letter-spacing: 0.1rem;
 	font-weight: 900;
 	margin: 0 0 3rem;
 }
@@ -99,6 +101,11 @@ img {
 	color: var(--color-lighter);
 }
 
+.section--dark {
+	background-color: var(--color-dark);
+	color: var(--color-lighter);
+}
+
 .picture {
 	display: flex;
 	justify-content: space-between;
@@ -109,6 +116,14 @@ img {
 	margin-left: 3rem;
 }
 
+.picture--left {
+	flex-direction: row-reverse;
+}
+
+.picture--left > * + * {
+	margin-right: 3rem;
+}
+
 .picture > * {
-	width: 45%;
+	width: 50%;
 }
