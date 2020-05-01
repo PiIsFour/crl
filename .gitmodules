@@ -26,3 +26,7 @@
 	path = day12
 	url = https://github.com/PiIsFour/crl.git
 	branch = day12
+[submodule "day19"]
+	path = day19
+	url = https://github.com/PiIsFour/crl.git
+	branch = day19
