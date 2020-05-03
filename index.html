@@ -4,20 +4,29 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Day 21</title>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="./style.css">
+	<script defer src="./main.js"></script>
 </head>
 <body>
 	<header>
-		<a href="#"><img src="./img/logo.svg" alt="Conquering Responsive Layouts"></a>
-		<nav>
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Contact</a></li>
-				<li><a href="#">Sign in</a></li>
-				<li><a href="#">Sign up</a></li>
-			</ul>
-		</nav>
+		<div class="container">
+			<button class="nav-toggle" aria-label="open navigation">
+				<span class="hamburger"></span>
+			</button>
+			<a class="logo" href="#">
+				<img src="./img/logo.svg" alt="Conquering Responsive Layouts">
+			</a>
+			<nav class="main-nav">
+				<ul class="nav__list">
+					<li class="nav__item"><a class="nav__link" href="#">Home</a></li>
+					<li class="nav__item"><a class="nav__link" href="#">About</a></li>
+					<li class="nav__item"><a class="nav__link" href="#">Contact</a></li>
+					<li class="nav__item"><a class="nav__link" href="#">Sign in</a></li>
+					<li class="nav__item"><a class="nav__link nav__link--button" href="#">Sign up</a></li>
+				</ul>
+			</nav>
+		</div>
 	</header>
 	<section class="hero">
 		<h1>Responsive layouts don’t have to be a struggle</h1>
