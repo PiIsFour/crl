@@ -14,13 +14,37 @@ body {
 	margin: 0;
 
 	font-family: 'Montserrat', sans-serif;
+	line-height: 1.4;
+}
+
+img {
+	max-width: 100%;
 }
 
 .container {
-	width: 80%;
+	width: 90%;
 	margin: 0 auto;
 	max-width: 1200px;
 	position: relative;
+}
+
+.btn {
+	display: inline-block;
+	color: var(--color-light);
+	background-color: var(--color-accent);
+	font-family: 'Oswald', sans-serif;
+	font-weight: 700;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	border-radius: 999px;
+	padding: .25em 1.5em;
+	cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+	opacity: .75;
 }
 
 header {
@@ -96,6 +120,7 @@ header > .container {
 	padding: 0;
 
 	font-family: 'Oswald', sans-serif;
+	font-weight: 700;
 	font-size: 1.125rem;
 }
 
@@ -110,13 +135,104 @@ header > .container {
 	text-transform: uppercase;
 }
 
-.nav__link--button {
-	background-color: var(--color-accent);
-	border-radius: 999px;
-	padding: .25rem 1.5rem;
-}
-
 .nav__link:hover,
 .nav__link:focus {
 	opacity: .65;
+}
+
+.hero {
+	background-color: var(--color-dark2);
+	color: var(--color-light);
+	font-size: 1.5rem;
+	padding: 3rem 0;
+}
+
+.hero__titel {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 700;
+	line-height: 1.1;
+	font-size: 3rem;
+	margin-top: 0;
+}
+
+.hero__titel--accent {
+	color: var(--color-accent);
+}
+
+.hero__btn {
+	padding: .5em 1.5em;
+}
+
+.bullet-points {
+	font-size: 1.125rem;
+	text-align: center;
+}
+
+section.bullet-points {
+	background-color: rgba(0, 0, 0, .05);
+	padding: 1rem 0;
+}
+
+.bullet-point {
+	margin: 2rem 0;
+}
+
+.bullet-point--dark {
+	color: var(--color-light);
+	background-color: var(--color-dark3);
+	padding: 1.5rem;
+}
+
+.bullet-point__titel {
+	font-size: 1.875rem;
+	margin-top: 0;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 700;
+	color: var(--color-accent);
+}
+
+.bullet-point--dark .bullet-point__titel {
+	color: var(--color-light);
+}
+
+/* 2.25rem
+1.3125rem */
+
+.main__description {
+	font-size: 1.3125rem;
+}
+
+.main__title {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 700;
+	font-size: 2.25rem;
+	color: var(--color-accent)
+}
+
+footer {
+	background-color: var(--color-dark2);
+	color: var(--color-light);
+	font-size: 1rem;
+	padding: 3rem 0;
+}
+
+.footer__title {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 700;
+	font-size: 1.5rem;
+	margin: 0 0 2rem;
+}
+
+.footer__sub-title {
+	color: var(--color-accent);
+	font-family: 'Oswald', sans-serif;
+	font-weight: 700;
+	font-size: 1.3125rem;
+}
+
+.footer__link {
+	display: block;
+	text-decoration: none;
+	color: inherit;
+	margin: 1.5rem 0;
 }
